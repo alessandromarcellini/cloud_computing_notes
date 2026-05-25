@@ -1,4 +1,4 @@
-#cloud #distributed-systems
+#cloud #distributed-systems #notes
 
 Virtualization and emulation are both techniques used to abstract hardware resources, but they differ in *how* they achieve compatibility and performance.
 

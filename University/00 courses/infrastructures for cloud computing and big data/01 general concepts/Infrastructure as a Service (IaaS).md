@@ -1,5 +1,5 @@
 
-#cloud #distributed-systems
+#cloud #distributed-systems #notes
 
 Infrastructure as a Service (IaaS) is a cloud computing model that provides **virtualized computing resources over the internet**, such as virtual machines, storage, and networking.
 
