@@ -11,7 +11,7 @@ As we just mentioned, providers often offer the possibility of creating a pipeli
 1) Reducing the scope of a function makes the code more "==modular==", simple to manage and reusable (we usually can reuse the smaller function in multiple workflows to compose them into new features);
 2) **Increasing throughput** for the system by pipelining the workload. E.g. an event arrives and function1 of the pipeline is activated, function1 finishes executing and function2 is activated, leaving function1 able to process the next event arriving;
 3) Each function can be developed in a different programming language.
-These are all [[microservices]] properties that with FaaS are ==lead to the extreme==.
+These are all [[University/00 courses/infrastructures for cloud computing and big data/cloud computing - SABBIONI/microservices]] properties that with FaaS are ==lead to the extreme==.
 
 ## Different Pipelining Workflow implementations
 When thinking of workflows 2 main different implementation approaches come to mind:

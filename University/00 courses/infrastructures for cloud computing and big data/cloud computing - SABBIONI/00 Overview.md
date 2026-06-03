@@ -3,6 +3,9 @@ This note is the entry point for the Cloud Computing course. It connects all cor
 #cloud #distributed-systems #moc
 
 ---
+# Why cloud
+Cloud made it easier and cheaper to run many small independently deployed services.
+
 
 # Course files
 
