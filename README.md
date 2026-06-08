@@ -1,3 +1,6 @@
+>[!important]
+>These notes are intended to be read and modified on obsidian.
+
 These are my notes taken during the course "Infrastructure for cloud computing and big data M".
 
 >[!warning]

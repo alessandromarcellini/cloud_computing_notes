@@ -12,7 +12,7 @@
 
 # what it is and usages
 Openstack is often referred to as the =="Cloud Operating System"== as it manages, abstracts, schedules and so on the underlying physical infrastrucure, following the **cloud paradigm** of **Infrastructure as a Service** ([[Infrastructure as a Service (IaaS)]]).
-Unlike [[Kubernetes]] openstack abstracts, controls and automates what's **outside of the execution environment** (networks, virtual servers, routers, vm configurations, cloud init, ...), leveraging virtualization and emulation of resources.
+Unlike [[02 Kubernetes]] openstack abstracts, controls and automates what's **outside of the execution environment** (networks, virtual servers, routers, vm configurations, cloud init, ...), leveraging virtualization and emulation of resources.
 %% Key difference:
 virtualization creates virtual resources as is while emulation creates virtual resources possibly adding some features on top of them. %%
 

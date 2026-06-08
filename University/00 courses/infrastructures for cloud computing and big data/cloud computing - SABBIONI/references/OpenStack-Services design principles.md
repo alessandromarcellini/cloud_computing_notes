@@ -1,4 +1,4 @@
-The openstack services are designed with open standards and **versatility in mind**, quite similar to (and one can say a precursor of) **[[University/00 courses/infrastructures for cloud computing and big data/cloud computing - SABBIONI/microservices]]**.
+The openstack services are designed with open standards and **versatility in mind**, quite similar to (and one can say a precursor of) **[[01 Microservices and containers]]**.
 E.g. ==Multiple Hypervisors== are supported (the compute is just an "adapter" for the hypervisor that manages the infrastructure)
 Easily tailored to user needs.
 

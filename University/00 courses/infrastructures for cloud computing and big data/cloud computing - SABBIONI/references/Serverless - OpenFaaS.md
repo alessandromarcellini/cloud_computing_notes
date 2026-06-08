@@ -6,7 +6,7 @@ In order to implement this platform, the creators of OpenFaaS, dind't create eve
 
 In this picture we see all the main technologies adopted to create OpenFaaS.
 **Only the Controller is a custom element**, all the others are all opensource projects widely used by the cloud native community.
-- [[Kubernetes]] as the resource manager;
+- [[02 Kubernetes]] as the resource manager;
 - containerd (docker) as the execution environment;
 - prometheus to collect and expose metrics of the system: this is particularly useful to scale the system (and eventually zero scale functions) based on the number of events that are currently streamed;
 - a [[Middleware - Message oriented Middleware (MOM)]] to decouple in space and time events and the relative function execution;
@@ -59,7 +59,7 @@ So, in this case, the trigger doesn't directly activate the function but it "pos
 
 #### Providers
 OpenFaaS is really nice also because it has adapters that enable it to spawn and control resources to execute function on multiple "supports" like:
-- [[Kubernetes]];
+- [[02 Kubernetes]];
 - AWS;
 - containerd (to run it directly inside your own machine as single node FaaS, see the [[#faasd]] section).
 
@@ -74,7 +74,7 @@ This is useful as we can host this on an [[edge computing]] server, enabling it 
 The creators of openfaas saw that most of the time it wasn't optimal to create a container for each request arriving; In particular, most of the time, resources where used more to create the actual container than to execute the function.
 
 In order to fix this behaviour they decided to move the fine-grained scalability from the execution environment (the container) to the actual process level.
-Infact, the actual infrastructure is really like **any other [[University/00 courses/infrastructures for cloud computing and big data/cloud computing - SABBIONI/microservices]] infrastructure**, the containers are not being created really dynamically at each event arriving, but they are being reused for multiple events, without being destroyed (basically like a service serving events).
+Infact, the actual infrastructure is really like **any other [[01 Microservices and containers]] infrastructure**, the containers are not being created really dynamically at each event arriving, but they are being reused for multiple events, without being destroyed (basically like a service serving events).
 
 In order to still offer that fine-grained scalability the infrastructure **doesn't spawn dynamically containers, but processes or threads inside them** (of course, containers can still be scaled by Kubernetes but they do it in a slower way than actually using them the way the should be intended in FaaS).
 To do this each container in it has a function and a **proxy** called watchdog that receives events and spawns processes to serve them inside the long-living container.

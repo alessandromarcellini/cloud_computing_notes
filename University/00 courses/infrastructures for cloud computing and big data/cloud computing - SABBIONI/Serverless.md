@@ -3,7 +3,7 @@
 # suggested topics before going into this lecture:
 - [[Infrastructure as a Service (IaaS)]]
 - [[Middleware - Message oriented Middleware (MOM)]]
-- [[University/00 courses/infrastructures for cloud computing and big data/cloud computing - SABBIONI/microservices]]
+- [[01 Microservices and containers]]
 
 # Quick history
 Serverless computing is a really modern cloud computing paradigm that emerged in the last few years. It started gaining traction around 2015 with AWS Lambda and got really widespread in the years after that.
