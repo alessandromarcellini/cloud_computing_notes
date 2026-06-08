@@ -1,0 +1,1 @@
+TODO, wasn't at the lecture, looking for someone that can write these notes
