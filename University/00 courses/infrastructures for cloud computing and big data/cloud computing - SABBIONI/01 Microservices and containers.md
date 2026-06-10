@@ -135,7 +135,7 @@ There's no virtualization involved in containers, **it's a user-space construct*
 In the following sections we will se how containers work in more detail.
 
 
-### Resource Isolation
+### Docker | Resource Isolation
 As we said, containers don't emulate anything in the system, they're like normal processes.
 So to actually provide the user with resource isolation and a vision of a completely normal machine, that has nothing to do with the one hosting it, they actually leverage normal OS stuff; **Cgroups and Namespaces**.
 
@@ -171,13 +171,13 @@ Some examples are:
 >**Decoupling between "container implementation" and everything else:**
 >
 >There's no difference in how containers can be created, run and be managed when using these different technologies. There's no real lock-in, the contract to interact with the actual container is the same for all technologies. 
-### Container management
+### Docker | Container management
 We've seen how containers are implementable, now we'll see how containers can be managed.
 There's a standard contract (it should be a HTTP Rest API contract) (See [[Rest APIs]]) that is followed by all implementations in order to interact with the actual container.
 
 In docker for example there's a CLI that communicates with the Rest Api exposed by the docker engine and that under the hood actually communicates with the Rest Api of Containerd. (As they're RestApis the format of communication is JSON).
 
-### Container Specifications and Images
+### Docker | Container Specifications and Images
 The way we can specify the container's configuration and features is, as always, through a contract. This contract is called **Dockerfile** and enables the user to specify how the container basic environment should be built and what it should have in it. This enables for the **environment to be reproducible**.
 
 From these Dockerfiles we can create **images**, a **snapshot** of the **execution environment** of the container. In the docker CLI we can do it using the command `docker create`.
@@ -227,7 +227,7 @@ This enables to **create lighter and more secure** containers.
 >
 >To avoid this we can create a first stage of the build where we copy the code, install the compiler and compile the executable. After this we'll create a second stage that will actually be the final image that the container will run, taking the executable from the first stage and transporting in a lighter and minimal image.
 
-### Docker plugins
+### Docker |  plugins
 TODO
 
 
@@ -243,4 +243,14 @@ TODO
 > - reproducible environment: using Dockerfiles as contracts;
 > - Packing: image building and registries;
 > - Management: through the CLI.
+
+
+
+>[!note]
+>Its important to not confuse containers and docker.
+>
+>Containers are a software and infrastructural **concept**.
+>Docker is a **tool/platform** that creates and runs containers.
+>
+>E.g. the image layer approach, the namespaces, cgroups and so on are docker's not principles of containers.
 
