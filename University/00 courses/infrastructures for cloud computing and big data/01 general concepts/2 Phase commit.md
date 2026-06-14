@@ -1,0 +1,1 @@
+The two-phase commit (2PC) is a protocol that ensures all nodes in a distributed system either all commit a transaction or all abort it, by first agreeing they can commit and then performing the commit together.

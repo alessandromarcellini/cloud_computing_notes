@@ -44,3 +44,6 @@ Every spine switch **is connected with all the leafs**. (more interconnections t
 Every leaf switch is **connected with a set of servers**.
 ###### pros
 **East-west traffic is optimized** and **consistent latency**
+
+>[!note]
+This is an implementation of a CLOS network, networks theorized by Charles Clos with the aim of being highly scalable without having to connect everything with everything.
